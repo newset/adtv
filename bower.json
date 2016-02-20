@@ -1,0 +1,18 @@
+{
+  "name": "adtv",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Insane <luojieyy@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/newset/adtv",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
