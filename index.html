@@ -5,9 +5,104 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>广告机后台</title>
-	<link rel="stylesheet" href="">
+	
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
 </head>
 <body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown language-switch">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="assets/images/flags/cn.png" class="position-left" alt="">
+						 中文
+						<span class="caret"></span>
+					</a>
+
+					<ul class="dropdown-menu">
+						<li><a class="deutsch"><img src="assets/images/flags/cn.png" alt=""> 中文简体</a></li>
+						<li><a class="deutsch"><img src="assets/images/flags/tw.png" alt=""> 中文繁体</a></li>
+						<li><a class="ukrainian"><img src="assets/images/flags/gb.png" alt="">English</a></li>
+					</ul>
+				</li>
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="assets/images/placeholder.jpg" alt="">
+						<span>Victoria</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-plus"></i>个人中心</a></li>
+						<li><a href="#"><span class="badge bg-teal-400 pull-right">58</span> <i class="icon-comment-discussion"></i>消息</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-cog5"></i>设置</a></li>
+						<li><a href="#"><i class="icon-switch2"></i>注销</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- /main navbar -->
+
+
+	<!-- Page header -->
+	<div class="page-header">
+		<div class="breadcrumb-line breadcrumb-line-wide">
+			<ul class="breadcrumb">
+				<li><a href="index.html"><i class="icon-home2 position-left"></i>首页</a></li>
+				<li class="active">全部</li>
+			</ul>
+			<ul class="breadcrumb-elements">
+				<li><a href="#"><i class="icon-comment-discussion position-left"></i>支持</a></li>
+			</ul>
+		</div>
+	</div>
 	
+		<!-- Page container -->
+	<div class="page-container pt-20">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main sidebar-fixed">
+				<div class="sidebar-content">
+
+					<!-- Main navigation -->
+					<div class="sidebar-category sidebar-category-visible">
+						<div class="category-title h6">
+							<span>Main navigation</span>
+							<ul class="icons-list">
+								<li><a href="#" data-action="collapse"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-wrapper">
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="vendor/PACE/pace.min.js"></script>
+	<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="vendor/blockUI/jquery.blockUI.js"></script>
+	<!-- /core JS files -->
 </body>
 </html>

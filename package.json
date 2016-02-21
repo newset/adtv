@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/newset/adtv/issues"
   },
-  "homepage": "https://github.com/newset/adtv#readme"
+  "homepage": "https://github.com/newset/adtv#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
