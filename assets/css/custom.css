@@ -1,0 +1,10 @@
+.navbar-brand + .navbar-brand{
+	padding: 12px 0px;
+}
+
+.has-sub ul{
+	display: none;
+}
+.has-sub.active ul{
+
+}

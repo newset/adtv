@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="adtv">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>广告机后台</title>
-	
+
+	<!-- global stylesheets -->
 	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
 	<!-- /global stylesheets -->
 
 </head>
@@ -18,6 +20,7 @@
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_icon_light.png" alt=""></a>
+			<a class="navbar-brand" href="#">节目终端后台</a>
 		</div>
 
 		<div class="navbar-collapse collapse" id="navbar-mobile">
@@ -38,7 +41,7 @@
 				<li class="dropdown dropdown-user">
 					<a class="dropdown-toggle" data-toggle="dropdown">
 						<img src="assets/images/placeholder.jpg" alt="">
-						<span>Victoria</span>
+						<span>管理员</span>
 						<i class="caret"></i>
 					</a>
 
@@ -59,7 +62,7 @@
 
 	<!-- Page header -->
 	<div class="page-header">
-		<div class="breadcrumb-line breadcrumb-line-wide">
+		<div class="breadcrumb-line breadcrumb-line-wide hidden-xs">
 			<ul class="breadcrumb">
 				<li><a href="index.html"><i class="icon-home2 position-left"></i>首页</a></li>
 				<li class="active">全部</li>
@@ -69,8 +72,9 @@
 			</ul>
 		</div>
 	</div>
-	
-		<!-- Page container -->
+	<!-- /Page header -->
+
+	<!-- Page container -->
 	<div class="page-container pt-20">
 
 		<!-- Page content -->
@@ -82,27 +86,81 @@
 
 					<!-- Main navigation -->
 					<div class="sidebar-category sidebar-category-visible">
-						<div class="category-title h6">
-							<span>Main navigation</span>
-							<ul class="icons-list">
-								<li><a href="#" data-action="collapse"></a></li>
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header"><span>导航</span> <i class="icon-menu" title="Main pages"></i></li>
+								<li ui-sref-active="active">
+									<a ui-sref="app.users"><i class="icon-home4"></i> 
+										<span>用户管理</span>
+									</a>
+								</li>
+								<li ui-sref-active="active">
+									<a ui-sref="app.admin"><i class="icon-list-unordered"></i> 
+									<span>普通管理员 <span class="label bg-blue-400">12</span></span></a>
+								</li>
+								<!-- <li ui-sref-active="active">
+									<a ui-sref="app.superadmin"><i class="icon-width"></i> <span>超级管理员</span></a>
+								</li> -->
+								<li ui-sref-active="active">
+									<a ui-sref="app.customer"><i class="icon-table2"></i> <span>广告主管理</span></a>
+								</li>
+								<li ui-sref-active="active"><a href=""><i class="icon-sphere"></i> <span>节目管理</span></a></li>
+
+								<li ui-sref-active="active" class="has-sub">
+									<a href="#"><i class="icon-tv"></i> <span>终端管理</span></a>
+									<ul ui-sref-active="show">
+										<li><a href="">终端信息管理</a></li>
+										<li><a href="">终端播放计划</a></li>
+									</ul>
+								</li>
+								
+								<li><a href=""><i class="icon-popout"></i> <span>场景管理</span></a></li>
+								<li>
+									<a ui-sref="app.plan"><i class="icon-puzzle4"></i> <span>套餐管理</span></a>
+								</li>
+								<li ui-sref-active="active">
+									<a ui-sref="app.order">
+									<i class="icon-stats-bars"></i> <span>订单管理</span></a>
+								</li>
+								<li ui-sref-active="active">
+									<a ui-sref="app.log"><i class="icon-stats-dots"></i> <span>财务记录</span></a>
+								</li>
+								<li><a ui-sref="app.logs"><i class="icon-statistics"></i> <span>日志记录</span></a></li>
+								<!-- /Main -->
 							</ul>
 						</div>
 					</div>
+
+					<!-- /Main navigation -->
 				</div>
 			</div>
+			<!-- /Main sidebar -->
 
-			<div class="content-wrapper">
-				
+			<div class="content-wrapper" ui-view>
+
 			</div>
 		</div>
+		<!-- /Page content -->
+
 	</div>
+	<!-- /Page container -->
 
 	<!-- Core JS files -->
 	<script type="text/javascript" src="vendor/PACE/pace.min.js"></script>
 	<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="vendor/blockUI/jquery.blockUI.js"></script>
+	<script type="text/javascript" src="vendor/angular/angular.js"></script>
+	<script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="vendor/oclazyload/dist/ocLazyLoad.min.js"></script>
 	<!-- /core JS files -->
+
+	<!-- app js -->
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/controllers.js"></script>
+
+	<!-- /app js -->
 </body>
 </html>
