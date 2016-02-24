@@ -5,6 +5,6 @@
 .has-sub ul{
 	display: none;
 }
-.has-sub.active ul{
-
+.has-sub.active.open ul{
+	display: block;
 }

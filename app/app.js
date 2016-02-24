@@ -9,7 +9,14 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
             $stateProvider
                 .state('app', {
                     abstract: true,
-                    templateUrl: 'templates/layout/content.html'
+                    templateUrl: 'templates/layout/content.html',
+                    resolve: {
+                    	'deps' : function($ocLazyLoad){
+                    		return $ocLazyLoad.load([
+                                // 'app/directives.js'
+                    		]);
+                    	}
+                    }
                 })
                 .state('app.home', {
                     url: '/',
@@ -31,6 +38,15 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
                     url: '/customer',
                     templateUrl: 'templates/users/customer.html'
                 })
+                .state('app.devices', {
+                    url: '/devices',
+                    abstract: true,
+                    template: '<div ui-view></div>'
+                })
+                .state('app.devices.index', {
+                    url: '/index',
+                    templateUrl: 'templates/devices/index.html'
+                })
                 .state('app.plan', {
                     url: '/plan',
                     templateUrl: 'templates/purchase/plan.html'
@@ -51,6 +67,6 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
     ])
     .run(function($rootScope, $state) {
         $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams, options) {
-        	console.log('to: ', toState);
+        	// console.log('to: ', toState);
         });
     });
