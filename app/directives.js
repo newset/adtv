@@ -38,4 +38,47 @@ angular.module('adtv')
 			restrict: 'A',
 			controller: $uiSubNav
 		};
-	}])
+	}]);
+
+angular.module( "ui.router.state" ).decorator(
+    "uiViewDirective",
+    function uiViewDirective( $delegate ) {
+        var directive = $delegate[1];
+
+	    var compile = directive.compile;
+
+	    directive.compile = function(tElement, tAttrs){
+	    	var link = compile.apply(this, arguments);
+		    tElement.append('<div>Added in the decorator</div>');
+		    
+		    return function(scope, elem, attrs) {
+		    	scope.$on('$viewContentLoading', function(evt){
+		        	elem.block({ 
+					    message: '<i class="icon-spinner10 spinner"></i>',
+					    timeout: 500,
+					    overlayCSS: {
+					        backgroundColor: '#fff',
+					        opacity: 0.7,
+					        cursor: 'wait'
+					    },
+					    css: {
+					        border: 0,
+					        padding: 0,
+					        backgroundColor: 'transparent'
+					    }
+					});
+		        })
+
+		    	// 其他 resolve 事件
+
+		        scope.$on('$viewContentLoaded', function(evt){
+		        	// $.unblockUI();
+		        })
+
+		        link.apply(this, arguments);
+		    };
+	    }
+
+        return $delegate;
+    }
+);

@@ -13,7 +13,8 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
                     resolve: {
                     	'deps' : function($ocLazyLoad){
                     		return $ocLazyLoad.load([
-                                // 'app/directives.js'
+                                'vendor/blockUI/jquery.blockUI.js',
+                                'vendor/bootbox.js/bootbox.js'
                     		]);
                     	}
                     }
