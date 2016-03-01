@@ -14,8 +14,12 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
                     	'deps' : function($ocLazyLoad){
                     		return $ocLazyLoad.load([
                                 'vendor/blockUI/jquery.blockUI.js',
-                                'vendor/bootbox.js/bootbox.js'
-                    		]);
+                                'vendor/bootbox.js/bootbox.js',
+                                'vendor/jquery-ui/jquery-ui.js',
+                                'vendor/bootstrap-treeview/dist/bootstrap-treeview.min.js',
+                                'vendor/jquery.fancytree/dist/skin-xp/ui.fancytree.css',
+                                'vendor/jquery.fancytree/dist/jquery.fancytree-all.min.js'
+                    		], {serie: true});
                     	}
                     }
                 })
@@ -63,6 +67,18 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
                 .state('app.logs', {
                     url: '/logs',
                     templateUrl: 'templates/log/index.html'
+                })
+                .state('app.scenes', {
+                    url: '/scenes',
+                    templateUrl: 'templates/scene/index.html'
+                })
+                .state('app.files', {
+                    url: '/files',
+                    controller: 'tv.files',
+                    controllerAs: 'vm',
+                    templateUrl: 'templates/files/index.html',
+                    resolve: {
+                    }
                 })
         }
     ])

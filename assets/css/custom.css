@@ -8,3 +8,11 @@
 .has-sub.active.open ul{
 	display: block;
 }
+
+ul.fancytree-container{
+	border: none!important;
+}
+
+ul.fancytree-container:focus{
+	outline: none;
+}
