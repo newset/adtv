@@ -4,15 +4,21 @@ angular.module('adtv')
     }])
     .controller('tv.files', ['$scope', function($scope) {
         var vm = this;
+
+        vm.node = null;
         vm.files = [
-            { title: "节目类型1", key: "1" }, {
-                title: "节目类型2",
+            { title: "图片", key: "1" }, 
+            {
+                title: "视频",
                 key: "2",
                 folder: true,
                 children: [
-                    { title: "节目类型2.1", key: "3" },
-                    { title: "节目类型2.2", key: "4" }
+                    { title: "Flash", key: "3" },
+                    { title: "MP4", key: "4" }
                 ]
+            },
+            {
+            	title: '音乐', key: 5
             }
         ];
     }]);

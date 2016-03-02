@@ -40,18 +40,33 @@ angular.module('adtv')
             controller: $uiSubNav
         };
     }])
-    .directive('uiTree', [function() {
+    .directive('uiTree', ['$parse', function($parse) {
         return {
             restrict: 'A',
+            // scope: {
+
+            // },
             require: '^ngModel',
             link: function(scope, elm, attrs, ngModel) {
-            	var check = attrs.treeCheck;
+            	var check = attrs.treeCheck,
+            		tree = null,
+            		setter = $parse(attrs.treeChecked).assign,
+            		currentNode = null;
 				scope.$watch(attrs.ngModel, function(newValue, oldValue){
-                    elm.fancytree({source: newValue, checkbox: false});
-                    // $log.info('in *thisDirective* model value changed...', newValue, oldValue);
+                    tree = elm.fancytree({
+                    	source: newValue, checkbox: false,
+                    	click: function(evt, data){
+                    		if(data.node.isFolder()){
+                    			data.node.toggleExpanded();
+						        return false;
+						    }
+						    
+                    		currentNode = data.node;
+                    		setter(scope, data.node);
+                    		scope.$apply();
+                    	}
+                    });
                 }, true);
-
-                // 添加 view
             }
         };
     }]);

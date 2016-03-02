@@ -9,6 +9,10 @@
 	display: block;
 }
 
+/**
+ * fancy tree 
+ */
+
 ul.fancytree-container{
 	border: none!important;
 }
@@ -16,3 +20,22 @@ ul.fancytree-container{
 ul.fancytree-container:focus{
 	outline: none;
 }
+span.fancytree-title {
+    line-height: 16px;
+}
+
+.fancytree-has-children.fancytree-ico-cf span.fancytree-icon, .fancytree-ico-ef span.fancytree-icon{
+	background: none;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 14px;
+	color: #adad9c;
+	margin-left: 4px;
+}
+
+.fancytree-has-children.fancytree-ico-cf span.fancytree-icon:before{
+    content: "\f114";
+}
+
+ .fancytree-ico-ef span.fancytree-icon:before{
+    content: "\f115";
+ }
