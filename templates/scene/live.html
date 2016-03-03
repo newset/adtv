@@ -1,0 +1,52 @@
+<div class="panel panel-flat">
+	<div class="panel-body">
+		<div class="mb-20">
+			<a href="" title="" class="btn btn-primary"><i class="icon-plus-circle2"></i> 新增</a>
+			<a href="" title="" class="btn btn-danger"><i class="icon-cancel-circle2"></i> 批量删除</a>
+			<div class="input-group col-lg-2 pull-right">
+				<input type="text" class="form-control" placeholder=" ">
+				<span class="input-group-btn">
+					<button class="btn bg-teal" type="button">搜索</button>
+				</span>
+			</div>
+		</div>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th><input type="checkbox" name="" value=""></th>
+					<th>ID</th>
+					<th>直播URL</th>
+					<th>直播终端数</th>
+					<th>直播时间</th>
+					<th>当前状态</th>
+					<th>创建时间</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="row in [1,2,3]">
+					<td><input type="checkbox" name="" value=""></td>
+					<td>{{row}}</td>
+					<td>http://i.adtv.com/{{row}}.html</td>
+					<td>100台</td>
+					<td>2016.01.15 09:30</td>
+					<td>正播放</td>
+					<td>2015年1月20</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="text-right mt-20">
+			<ul class="pagination">
+				<li><a href="#">&lsaquo;</a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li class="disabled"><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&rsaquo;</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
