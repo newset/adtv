@@ -16,6 +16,8 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
                                 'vendor/blockUI/jquery.blockUI.js',
                                 'vendor/bootbox.js/bootbox.js',
                                 'vendor/jquery-ui/jquery-ui.js',
+                                'vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
+                                'vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.css',
                                 'vendor/bootstrap-treeview/dist/bootstrap-treeview.min.js',
                                 'vendor/jquery.fancytree/dist/skin-xp/ui.fancytree.css',
                                 'vendor/jquery.fancytree/dist/jquery.fancytree-all.min.js'

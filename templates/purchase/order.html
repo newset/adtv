@@ -1,71 +1,110 @@
 <div class="panel panel-flat">
-	<div class="panel-body">
-		<div class="mb-20">
-			<div class="input-group col-lg-2 pull-right">
-				<input type="text" class="form-control" placeholder=" ">
-				<span class="input-group-btn">
-					<button class="btn bg-teal" type="button">搜索</button>
-				</span>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<table class="table table-bordered">
-			<thead>
-				<tr>
-					<th>订单号</th>
-					<th>购买人</th>
-					<th>套餐名称</th>
-					<th>终端数量</th>
-					<th>推送场景</th>
-					<th>费用</th>
-					<th>状态</th>
-					<th>创建时间</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>20131231313</td>
-					<td>admin</td>
-					<td>优惠套餐</td>
-					<td>100</td>
-					<td>新场景</td>
-					<td>1000.00￥</td>
-					<td>已支付</td>
-					<td>2012-1-2</td>
-				</tr>
-				<tr>
-					<td>20131231313</td>
-					<td>admin</td>
-					<td>优惠套餐</td>
-					<td>100</td>
-					<td>新场景</td>
-					<td>1000.00￥</td>
-					<td>已支付</td>
-					<td>2012-1-2</td>
-				</tr>
-				<tr>
-					<td>20131231313</td>
-					<td>admin</td>
-					<td>优惠套餐</td>
-					<td>100</td>
-					<td>新场景</td>
-					<td>1000.00￥</td>
-					<td>已支付</td>
-					<td>2012-1-2</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<div class="text-right mt-20">
-			<ul class="pagination">
-				<li><a href="#">&lsaquo;</a></li>
-				<li class="active"><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li class="disabled"><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-				<li><a href="#">&rsaquo;</a></li>
-			</ul>
-		</div>
-	</div>
+    <div class="panel-body">
+        <div class="mb-20">
+    		<div class="form-horizontal">
+        		<div class="row">
+	                <div class="col-md-4">
+	                    <div class="form-group">
+							<label class="col-lg-3 control-label">起止日期:</label>
+							<div class="col-lg-4">
+								<input type="text" class="form-control" placeholder="">
+							</div>
+							<div class="col-lg-4 ml-5">
+								<input type="text" class="form-control" placeholder="">
+							</div>
+						</div>
+	                </div>
+	            </div>
+	            <div class="row">
+	            	<div class="col-lg-4">
+	            		<div class="form-group">
+							<label class="col-lg-3 control-label">购买用户:</label>
+							<div class="col-lg-8">
+								<input type="text" class="form-control" placeholder="">
+							</div>
+						</div>
+	            	</div>
+	            	<div class="col-lg-4">
+	            		<div class="form-group">
+							<label class="col-lg-3 control-label">订单状态:</label>
+							<div class="col-lg-8">
+								<select name="" chosen class="form-control">
+									<option value="">已完成</option>
+									<option value="">未完成</option>
+									<option value="">已关闭</option>
+								</select>
+							</div>
+						</div>
+	            	</div>
+	            	<div class="col-lg-4">
+	            		<div class="input-group col-lg-8 pull-right">
+			                <input type="text" class="form-control" placeholder=" ">
+			                <span class="input-group-btn">
+								<button class="btn bg-teal" type="button">搜索</button>
+							</span>
+			            </div>
+	            	</div>
+	            </div>
+        	</div>
+            
+            <div class="clearfix"></div>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>订单号</th>
+                    <th>购买人</th>
+                    <th>套餐名称</th>
+                    <th>终端数量</th>
+                    <th>推送场景</th>
+                    <th>费用</th>
+                    <th>状态</th>
+                    <th>创建时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20131231313</td>
+                    <td>admin</td>
+                    <td>优惠套餐</td>
+                    <td>100</td>
+                    <td>新场景</td>
+                    <td>1000.00￥</td>
+                    <td>已支付</td>
+                    <td>2012-1-2</td>
+                </tr>
+                <tr>
+                    <td>20131231313</td>
+                    <td>admin</td>
+                    <td>优惠套餐</td>
+                    <td>100</td>
+                    <td>新场景</td>
+                    <td>1000.00￥</td>
+                    <td>已支付</td>
+                    <td>2012-1-2</td>
+                </tr>
+                <tr>
+                    <td>20131231313</td>
+                    <td>admin</td>
+                    <td>优惠套餐</td>
+                    <td>100</td>
+                    <td>新场景</td>
+                    <td>1000.00￥</td>
+                    <td>已支付</td>
+                    <td>2012-1-2</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-right mt-20">
+            <ul class="pagination">
+                <li><a href="#">&lsaquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li class="disabled"><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&rsaquo;</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
