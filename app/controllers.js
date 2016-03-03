@@ -21,4 +21,29 @@ angular.module('adtv')
             	title: '音乐', key: 5
             }
         ];
+    }])
+    .controller('tv.scenes', ['$scope', function($scope) {
+    	var vm = this;
+    	vm.scenes = [
+    		{
+    			title: '场景1',
+    			created_at: '2016-02-10'
+    		},
+    		{
+    			title: '场景2',
+    			created_at: '2016-02-10'
+    		},
+    		{
+    			title: '场景3',
+    			created_at: '2016-02-10'
+    		},
+    		{
+    			title: '场景4',
+    			created_at: '2016-02-10'
+    		},
+    		{
+    			title: '场景5',
+    			created_at: '2016-02-10'
+    		}
+    	];
     }]);

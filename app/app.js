@@ -70,6 +70,8 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
                 })
                 .state('app.scenes', {
                     url: '/scenes',
+                    controller: 'tv.scenes',
+                    controllerAs: 'vm',
                     templateUrl: 'templates/scene/index.html'
                 })
                 .state('app.files', {
