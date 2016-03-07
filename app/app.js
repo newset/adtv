@@ -20,7 +20,9 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
                                 'vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.css',
                                 'vendor/bootstrap-treeview/dist/bootstrap-treeview.min.js',
                                 'vendor/jquery.fancytree/dist/skin-xp/ui.fancytree.css',
-                                'vendor/jquery.fancytree/dist/jquery.fancytree-all.min.js'
+                                'vendor/jquery.fancytree/dist/jquery.fancytree-all.min.js',
+                                'vendor/sweetalert/dist/sweetalert.css',
+                                'vendor/sweetalert/dist/sweetalert.min.js'
                     		], {serie: true});
                     	}
                     }

@@ -1,105 +1,142 @@
 <div class="panel panel-flat">
-	<div class="panel-body">
-		<div class="mb-20">
-			<button type="button" class="btn btn-primary pull-right ml-20">新增设备</button>
-			<div class="input-group col-lg-2 pull-right">
-				<input type="text" class="form-control" placeholder=" ">
-				<span class="input-group-btn">
+    <div class="panel-body">
+        <div class="mb-20">
+            <button type="button" class="btn btn-primary pull-right ml-20">新增设备</button>
+            <div class="input-group col-lg-2 pull-right">
+                <input type="text" class="form-control" placeholder=" ">
+                <span class="input-group-btn">
 					<button class="btn bg-teal" type="button">搜索</button>
 				</span>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<table class="table table-bordered">
-			<thead>
-				<tr>
-					<th><input type="checkbox" name="" value=""></th>
-					<th>IP</th>
-					<th>所属区域</th>
-					<th>系统版本</th>
-					<th>播放总时长</th>
-					<th>当前状态</th>
-					<th>开机状态</th>
-					<th>开机时间</th>
-					<th>关机时间</th>
-					<th>GPS开关</th>
-					<th>当前播放场景ID</th>
-					<th>所属管理员</th>
-					<th>内存使用率</th>
-					<th>操作</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><input type="checkbox" name="" value=""></td>
-					<td>12454</td>
-					<td>四川省成都市金牛区</td>
-					<td>2.0</td>
-					<td>10小时30分</td>
-					<td>播放</td>
-					<td>开机</td>
-					<td>2016.1.20 09:30</td>
-					<td>2016.1.20 19:30</td>
-					<td>已打开</td>
-					<td>157</td>
-					<td>张三</td>
-					<td>70%</td>
-					<td>
-						<a href=""><i class="icon-pencil"></i></a>
-						<a href=""><i class="icon-cross2"></i></a>
-					</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="" value=""></td>
-					<td>12454</td>
-					<td>四川省成都市金牛区</td>
-					<td>2.0</td>
-					<td>10小时30分</td>
-					<td>播放</td>
-					<td>开机</td>
-					<td>2016.1.20 09:30</td>
-					<td>2016.1.20 19:30</td>
-					<td>已打开</td>
-					<td>157</td>
-					<td>张三</td>
-					<td>70%</td>
-					<td>
-						<a href=""><i class="icon-pencil"></i></a>
-						<a href=""><i class="icon-cross2"></i></a>
-					</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="" value=""></td>
-					<td>12454</td>
-					<td>四川省成都市金牛区</td>
-					<td>2.0</td>
-					<td>10小时30分</td>
-					<td>播放</td>
-					<td>开机</td>
-					<td>2016.1.20 09:30</td>
-					<td>2016.1.20 19:30</td>
-					<td>已打开</td>
-					<td>157</td>
-					<td>张三</td>
-					<td>70%</td>
-					<td>
-						<a href=""><i class="icon-pencil"></i></a>
-						<a href=""><i class="icon-cross2"></i></a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<div class="text-right mt-20">
-			<ul class="pagination">
-				<li><a href="#">&lsaquo;</a></li>
-				<li class="active"><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li class="disabled"><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-				<li><a href="#">&rsaquo;</a></li>
-			</ul>
-		</div>
-	</div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" name="" value="">
+                    </th>
+                    <th>IP</th>
+                    <th>所属区域</th>
+                    <th>系统版本</th>
+                    <th>播放总时长</th>
+                    <th>当前状态</th>
+                    <th>开机状态</th>
+                    <th>开机时间</th>
+                    <th>关机时间</th>
+                    <th>GPS开关</th>
+                    <th>当前播放场景ID</th>
+                    <th>所属管理员</th>
+                    <th>内存使用率</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" value="">
+                    </td>
+                    <td>12454</td>
+                    <td>四川省成都市金牛区</td>
+                    <td>2.0</td>
+                    <td>10小时30分</td>
+                    <td>播放</td>
+                    <td>开机</td>
+                    <td>2016.1.20 09:30</td>
+                    <td>2016.1.20 19:30</td>
+                    <td>
+                        <div class="checkbox checkbox-switch">
+                            <label>
+                                <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on bootstrap-switch-mini bootstrap-switch-animate" style="width: 78px;">
+                                    <div class="bootstrap-switch-container" style="width: 114px; margin-left: 0px;"><span class="bootstrap-switch-handle-on bootstrap-switch-primary" style="width: 38px;">开</span><span class="bootstrap-switch-label" style="width: 38px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-default" style="width: 38px;">关</span>
+                                        <input type="checkbox" data-on-text="开" data-off-text="关" class="switch" data-size="mini" checked="checked">
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>157</td>
+                    <td>张三</td>
+                    <td>70%</td>
+                    <td>
+                        <a href=""><i class="icon-pencil"></i></a>
+                        <a href=""><i class="icon-cross2"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" value="">
+                    </td>
+                    <td>12454</td>
+                    <td>四川省成都市金牛区</td>
+                    <td>2.0</td>
+                    <td>10小时30分</td>
+                    <td>播放</td>
+                    <td>开机</td>
+                    <td>2016.1.20 09:30</td>
+                    <td>2016.1.20 19:30</td>
+                    <td>
+                        <div class="checkbox checkbox-switch">
+                            <label>
+                                <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on bootstrap-switch-mini bootstrap-switch-animate" style="width: 78px;">
+                                    <div class="bootstrap-switch-container" style="width: 114px; margin-left: 0px;"><span class="bootstrap-switch-handle-on bootstrap-switch-primary" style="width: 38px;">开</span><span class="bootstrap-switch-label" style="width: 38px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-default" style="width: 38px;">关</span>
+                                        <input type="checkbox" data-on-text="开" data-off-text="关" class="switch" data-size="mini" checked="checked">
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>157</td>
+                    <td>张三</td>
+                    <td>70%</td>
+                    <td>
+                        <a href=""><i class="icon-pencil"></i></a>
+                        <a href=""><i class="icon-cross2"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" value="">
+                    </td>
+                    <td>12454</td>
+                    <td>四川省成都市金牛区</td>
+                    <td>2.0</td>
+                    <td>10小时30分</td>
+                    <td>播放</td>
+                    <td>开机</td>
+                    <td>2016.1.20 09:30</td>
+                    <td>2016.1.20 19:30</td>
+                    <td>
+                        <div class="checkbox checkbox-switch">
+                            <label>
+                                <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-mini bootstrap-switch-animate" style="width: 78px;">
+                                    <div class="bootstrap-switch-container" style="width: 114px; margin-left: -38px;"><span class="bootstrap-switch-handle-on bootstrap-switch-primary" style="width: 38px;">开</span><span class="bootstrap-switch-label" style="width: 38px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-default" style="width: 38px;">关</span>
+                                        <input type="checkbox" data-on-text="开" data-off-text="关" class="switch" data-size="mini" checked="checked">
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </td>
+                    <td>157</td>
+                    <td>张三</td>
+                    <td>70%</td>
+                    <td>
+                        <a href=""><i class="icon-pencil"></i></a>
+                        <a href=""><i class="icon-cross2"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-right mt-20">
+            <ul class="pagination">
+                <li><a href="#">&lsaquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li class="disabled"><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&rsaquo;</a></li>
+            </ul>
+        </div>
+    </div>
 </div>

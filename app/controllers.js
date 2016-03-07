@@ -21,6 +21,19 @@ angular.module('adtv')
             	title: '音乐', key: 5
             }
         ];
+
+        vm.verify = function(){
+            swal('审核', '是否通过当前节目？', 'info');
+            swal({
+                title: "审核",
+                text: "是否通过当前节目？",
+                type: "info",
+                showCancelButton: true,
+                confirmButtonColor: "#FF7043",
+                confirmButtonText: "通过",
+                cancelButtonText: "不通过",
+            });
+        }
     }])
     .controller('tv.scenes', ['$scope', function($scope) {
     	var vm = this;
