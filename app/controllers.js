@@ -2,7 +2,7 @@ angular.module('adtv')
     .controller('tv.users', ['$scope', function($scope) {
         $scope.users = [];
     }])
-    .controller('tv.files', ['$scope', function($scope) {
+    .controller('tv.shows', ['$scope', function($scope) {
         var vm = this;
 
         vm.node = null;

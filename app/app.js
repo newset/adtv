@@ -56,6 +56,10 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
                     url: '/index',
                     templateUrl: 'templates/devices/index.html'
                 })
+                .state('app.devices.playlist', {
+                    url: '/playlist',
+                    templateUrl: 'templates/devices/playlist.html'
+                })
                 .state('app.plan', {
                     url: '/plan',
                     templateUrl: 'templates/purchase/plan.html'
@@ -82,11 +86,11 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
                     controllerAs: 'vm',
                     templateUrl: 'templates/scene/index.html'
                 })
-                .state('app.files', {
-                    url: '/files',
-                    controller: 'tv.files',
+                .state('app.shows', {
+                    url: '/shows',
+                    controller: 'tv.shows',
                     controllerAs: 'vm',
-                    templateUrl: 'templates/files/index.html',
+                    templateUrl: 'templates/shows/index.html',
                     resolve: {
                     }
                 })

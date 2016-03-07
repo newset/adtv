@@ -19,6 +19,7 @@
 				<table class="table table-bordered table-striped table-hover">
 					<thead>
 						<tr>
+							<th>广告商</th>
 							<th>文件名</th>
 							<th>大小</th>
 							<th>上传时间</th>
@@ -26,7 +27,8 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr ng-repeat="row in [1,2,3]">
+						<tr ng-repeat="row in ['一','二','三']">
+							<td>广告商{{row}}</td>
 							<td>1123.mp3</td>
 							<td>2.2M</td>
 							<td>2012-11-21</td>

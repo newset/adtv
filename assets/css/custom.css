@@ -9,6 +9,12 @@
 	display: block;
 }
 
+@media (min-width: 1200px) {
+  .form-horizontal .control-label[class*=col-lg-] {
+    text-align: right;
+  }
+}
+
 /**
  * fancy tree 
  */
