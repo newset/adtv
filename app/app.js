@@ -22,7 +22,8 @@ angular.module('adtv', ['ui.router', 'oc.lazyLoad'])
                                 'vendor/jquery.fancytree/dist/skin-xp/ui.fancytree.css',
                                 'vendor/jquery.fancytree/dist/jquery.fancytree-all.min.js',
                                 'vendor/sweetalert/dist/sweetalert.css',
-                                'vendor/sweetalert/dist/sweetalert.min.js'
+                                'vendor/sweetalert/dist/sweetalert.min.js',
+                                'vendor/ng-dialog/js/ngDialog.js'
                     		], {serie: true});
                     	}
                     }

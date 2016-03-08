@@ -28,6 +28,8 @@
     "jquery.fancytree": "fancytree#^2.15.0",
     "bootstrap-treeview": "^1.2.0",
     "bootstrap-datepicker": "eternicode/bootstrap-datepicker#^1.6.0",
-    "sweetalert": "^1.1.3"
+    "sweetalert": "^1.1.3",
+    "ngModal": "^1.2.2",
+    "ng-dialog": "ngDialog#^0.5.8"
   }
 }

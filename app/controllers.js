@@ -35,7 +35,7 @@ angular.module('adtv')
             });
         }
     }])
-    .controller('tv.scenes', ['$scope', function($scope) {
+    .controller('tv.scenes', ['$scope', 'ngDialog', function($scope, ngDialog) {
     	var vm = this;
     	vm.scenes = [
     		{
@@ -59,4 +59,10 @@ angular.module('adtv')
     			created_at: '2016-02-10'
     		}
     	];
+
+        vm.push = function(scene){
+            ngDialog.open({
+                template: 'templates/scene/push.html',
+            });
+        }
     }]);
