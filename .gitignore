@@ -2,3 +2,5 @@ less/
 .DS_Store
 assets/js/plugins
 vendor/
+build/
+ext
