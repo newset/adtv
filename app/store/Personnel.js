@@ -1,4 +1,4 @@
-Ext.define('MyApp.store.Personnel', {
+Ext.define('MoibleTV.store.Personnel', {
     extend: 'Ext.data.Store',
 
     alias: 'store.personnel',

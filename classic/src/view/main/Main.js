@@ -5,7 +5,7 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('MyApp.view.main.Main', {
+Ext.define('MoibleTV.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
 
@@ -13,15 +13,15 @@ Ext.define('MyApp.view.main.Main', {
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
 
-        'MyApp.view.main.MainController',
-        'MyApp.view.main.MainModel',
-        'MyApp.view.main.List'
+        'MoibleTV.view.main.MainController',
+        'MoibleTV.view.main.MainModel',
+        'MoibleTV.view.main.List'
     ],
 
     controller: 'main',
     viewModel: 'main',
 
-    ui: 'navigation',
+    // ui: 'navigation',
 
     tabBarHeaderPosition: 1,
     titleRotation: 0,
@@ -83,22 +83,7 @@ Ext.define('MyApp.view.main.Main', {
             xtype: 'mainlist'
         }]
     }, {
-        title: 'Users',
-        iconCls: 'fa-user',
-        bind: {
-            html: '{loremIpsum}'
-        }
-    }, {
-        title: 'Groups',
-        iconCls: 'fa-users',
-        bind: {
-            html: '{loremIpsum}'
-        }
-    }, {
-        title: 'Settings',
-        iconCls: 'fa-cog',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        xtype: 'datefield',
+        fieldLabel: 'Start date'
     }]
 });

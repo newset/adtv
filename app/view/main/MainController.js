@@ -4,10 +4,14 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('MyApp.view.main.MainController', {
+Ext.define('MoibleTV.view.main.MainController', {
     extend: 'Ext.app.ViewController',
 
     alias: 'controller.main',
+
+    init: function(){
+
+    },
 
     onItemSelected: function (sender, record) {
         Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);

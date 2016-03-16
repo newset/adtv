@@ -2,7 +2,7 @@
     /**
      * The application's namespace.
      */
-    "name": "MyApp",
+    "name": "MoibleTV",
     
     /**
      * The version of the application.
@@ -76,13 +76,13 @@
     "sass": {
         /**
          * The root namespace to use when mapping *.scss files to classes in the
-         * sass/src and sass/var directories. For example, "MyApp.view.Foo" would
-         * map to "sass/src/view/Foo.scss". If we changed this to "MyApp.view" then
+         * sass/src and sass/var directories. For example, "MoibleTV.view.Foo" would
+         * map to "sass/src/view/Foo.scss". If we changed this to "MoibleTV.view" then
          * it would map to "sass/src/Foo.scss". To style classes outside the app's
          * root namespace, change this to "". Doing so would change the mapping of
-         * "MyApp.view.Foo" to "sass/src/MyApp/view/Foo.scss".
+         * "MoibleTV.view.Foo" to "sass/src/MoibleTV/view/Foo.scss".
          */
-        "namespace": "MyApp",
+        "namespace": "MoibleTV",
 
         /**
          * File used to save sass variables edited via Sencha Inspector. This file
@@ -553,7 +553,7 @@
         "classic": {
             "toolkit": "classic",
             
-            "theme": "theme-triton",
+            "theme": "theme-neptune",
             
             "sass": {
                 // "save": "classic/sass/save.scss"
@@ -563,7 +563,7 @@
         "modern": {
             "toolkit": "modern",
             
-            "theme": "theme-triton",
+            "theme": "theme-neptune",
             
             "sass": {
                 // "save": "modern/sass/save.scss"
@@ -576,5 +576,5 @@
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "201f06c0-80da-466e-924c-f4d2c966dcc1"
+    "id": "3475b251-7444-4cab-84da-206e0a5a5e4a"
 }
