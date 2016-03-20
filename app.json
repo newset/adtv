@@ -270,6 +270,11 @@
             "path": "${build.out.css.path}",
             "bundle": true,
             "exclude": ["fashion"]
+        },
+        {
+            // path to font-awesome.min.css
+            "path": "resources/font-awesome/css/font-awesome.min.css",
+            "update": "full"
         }
     ],
 

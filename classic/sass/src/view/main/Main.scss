@@ -81,3 +81,46 @@
     top: 30px;
     right: -24px;
 }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1458445629_6416082.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1458445629_6416082.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1458445629_6416082.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1458445629_6416082.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1458445629_6416082.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.ali-font{
+    font: 'iconfont';
+}
+
+.af.af-user:after{
+    content: 'e605';
+}
+
+/** 
+ * button
+ */
+.x-btn{
+    border-radius: 0px;
+}
+.nav-container .x-autocontainer-outerCt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-container .x-autocontainer-innerCt{
+    width: 800px;
+    height: 260px;
+    display: inline-block;
+}
+
+.nav-container .x-autocontainer-innerCt .image-btn{
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin: 0px 0px 10px 10px;
+    background-image: none;
+}

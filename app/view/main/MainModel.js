@@ -13,16 +13,4 @@ Ext.define('MoibleTV.view.main.MainModel', {
     }
 
     //TODO - add data, formulas and/or methods to support your view
-   	buttons: [{
-   		title: '用户管理',
-   		type: 'panel',
-   		target: '',
-   		icon: ''
-   	},
-   	{
-   		title: '节目管理',
-   		type: 'panel',
-   		target: '',
-   		icon: ''
-   	}]
 });

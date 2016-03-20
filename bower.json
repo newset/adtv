@@ -1,0 +1,22 @@
+{
+  "name": "adtv",
+  "homepage": "https://github.com/newset/adtv",
+  "authors": [
+    "Insane <luojieyy@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}
