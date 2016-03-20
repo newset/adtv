@@ -105,16 +105,20 @@
 .x-btn{
     border-radius: 0px;
 }
-.nav-container .x-autocontainer-outerCt{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+// .nav-container .x-autocontainer-outerCt{
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+// }
 
-.nav-container .x-autocontainer-innerCt{
-    width: 800px;
-    height: 260px;
-    display: inline-block;
+// .nav-container .x-autocontainer-innerCt{
+//     width: 800px;
+//     height: 260px;
+//     display: inline-block;
+// }
+// 
+.x-autocontainer-innerCt{
+    vertical-align: middle;
 }
 
 .nav-container .x-autocontainer-innerCt .image-btn{
@@ -124,3 +128,15 @@
     margin: 0px 0px 10px 10px;
     background-image: none;
 }
+
+.nav-container .x-autocontainer-innerCt .image-btn .x-btn-icon-el{
+    height: 60px;
+    width: 100px;
+    background-size: contain;
+}
+
+.nav-container .x-autocontainer-innerCt .image-btn .x-btn-inner{
+    font-size: 16px;
+    font-weight: bold;
+}
+

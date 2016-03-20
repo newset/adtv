@@ -6,7 +6,7 @@
  * TODO - Replace this content of this view to suite the needs of your application.
  */
 Ext.define('MoibleTV.view.main.Main', {
-    extend: 'Ext.tab.Panel',
+    extend: 'Ext.panel.Panel',
     xtype: 'app-main',
 
     requires: [
@@ -22,13 +22,11 @@ Ext.define('MoibleTV.view.main.Main', {
     viewModel: 'main',
 
     // ui: 'navigation',
-
     tabBarHeaderPosition: 1,
     titleRotation: 0,
     tabRotation: 0,
-
-    header: false,
-
+    title: '节目终端后台',
+    titlePosition: 2,
     items: [{
         xtype: 'mainlists'
     }]
