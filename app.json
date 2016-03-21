@@ -2,7 +2,7 @@
     /**
      * The application's namespace.
      */
-    "name": "MoibleTV",
+    "name": "MobileTV",
     
     /**
      * The version of the application.
@@ -76,13 +76,13 @@
     "sass": {
         /**
          * The root namespace to use when mapping *.scss files to classes in the
-         * sass/src and sass/var directories. For example, "MoibleTV.view.Foo" would
-         * map to "sass/src/view/Foo.scss". If we changed this to "MoibleTV.view" then
+         * sass/src and sass/var directories. For example, "MobileTV.view.Foo" would
+         * map to "sass/src/view/Foo.scss". If we changed this to "MobileTV.view" then
          * it would map to "sass/src/Foo.scss". To style classes outside the app's
          * root namespace, change this to "". Doing so would change the mapping of
-         * "MoibleTV.view.Foo" to "sass/src/MoibleTV/view/Foo.scss".
+         * "MobileTV.view.Foo" to "sass/src/MobileTV/view/Foo.scss".
          */
-        "namespace": "MoibleTV",
+        "namespace": "MobileTV",
 
         /**
          * File used to save sass variables edited via Sencha Inspector. This file

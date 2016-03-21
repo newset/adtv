@@ -123,6 +123,12 @@
     float: left;
     margin: 0px 0px 10px 10px;
     background-image: none;
+    transition: all .3s ease-out;
+}
+
+.nav-container .x-autocontainer-innerCt .image-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 4px;
 }
 
 .nav-container .x-autocontainer-innerCt .image-btn .x-btn-icon-el{

@@ -1,12 +1,12 @@
 /**
  * This view is an example list of people.
  */
-Ext.define('MoibleTV.view.main.List', {
+Ext.define('MobileTV.view.main.List', {
     extend: 'Ext.container.Container',
     xtype: 'mainlists',
 
     requires: [
-        'MoibleTV.store.Personnel'
+        'MobileTV.store.Personnel'
     ],
     controller: 'homegrid',
     title: false,

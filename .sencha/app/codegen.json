@@ -290,6 +290,17 @@
         "controllerNamespace": "MoibleTV.controller",
         "name": "view/main/HomeList"
       }
+    },
+    "app/controller/users/Admin.js": {
+      "source": "{controllerFileName}.js.tpl.merge",
+      "version": "b092f4aad11d2f7eaab5ce3e2dcc2fc3134f3188",
+      "parameters": {
+        "appName": "MoibleTV",
+        "controllerFileName": "users/Admin",
+        "controllerName": "users.Admin",
+        "controllerNamespace": "MoibleTV.controller",
+        "name": "users.Admin"
+      }
     }
   }
 }

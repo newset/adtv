@@ -15,19 +15,19 @@ This folder contains misc. support code for Sass builds (global functions, etc.)
 
 This folder contains Sass files defining CSS rules corresponding to classes
 included in the application's JavaScript code build. By default, files in this 
-folder are mapped to the application's root namespace, 'MoibleTV'. This is set in
+folder are mapped to the application's root namespace, 'MobileTV'. This is set in
 `"app.json"`:
 
     "sass": {
-        "namespace": "MoibleTV"
+        "namespace": "MobileTV"
     }
 
 ### ./sass/var
 
 This folder contains Sass files defining Sass variables corresponding to classes
 included in the application's JavaScript code build. By default, files in this 
-folder are mapped to the application's root namespace, 'MoibleTV' in the same way
-as `"MoibleTV/sass/src"`.
+folder are mapped to the application's root namespace, 'MobileTV' in the same way
+as `"MobileTV/sass/src"`.
 
 ## Slicing
 

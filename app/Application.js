@@ -3,10 +3,10 @@
  * calls Ext.application(). This is the ideal place to handle application launch and
  * initialization details.
  */
-Ext.define('MoibleTV.Application', {
+Ext.define('MobileTV.Application', {
     extend: 'Ext.app.Application',
     
-    name: 'MoibleTV',
+    name: 'MobileTV',
 
     stores: [
         // TODO: add global / shared stores here

@@ -5,16 +5,16 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('MoibleTV.view.main.Main', {
+Ext.define('MobileTV.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
 
     requires: [
         'Ext.MessageBox',
 
-        'MoibleTV.view.main.MainController',
-        'MoibleTV.view.main.MainModel',
-        'MoibleTV.view.main.List'
+        'MobileTV.view.main.MainController',
+        'MobileTV.view.main.MainModel',
+        'MobileTV.view.main.List'
     ],
 
     controller: 'main',

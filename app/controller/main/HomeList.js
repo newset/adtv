@@ -1,19 +1,8 @@
-Ext.define('MoibleTV.controller.main.HomeList', {
+Ext.define('MobileTV.controller.main.HomeList', {
     extend: 'Ext.app.ViewController',
-    requires: [
-        'Ext.tab.Panel'
-    ],
     alias: 'controller.homegrid',
     init: function() {
         console.log('The panel was rendered');
-    },
-    listeners: {
-        click: {
-            element: 'a.image-btn', //bind to the underlying el property on the panel
-            fn: function() {
-                console.log('click el');
-            }
-        },
     },
     currentPanel: null,
     showPanel: function(btn) {
@@ -42,7 +31,7 @@ Ext.define('MoibleTV.controller.main.HomeList', {
             iconCls: btn.config.data.icon,
             renderTo: document.body,
             tools: [{
-                type: 'refresh',
+                type: 'refresh'
             }]
         });
 
