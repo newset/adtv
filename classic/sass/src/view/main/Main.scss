@@ -105,17 +105,13 @@
 .x-btn{
     border-radius: 0px;
 }
-// .nav-container .x-autocontainer-outerCt{
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-// }
 
-// .nav-container .x-autocontainer-innerCt{
-//     width: 800px;
-//     height: 260px;
-//     display: inline-block;
-// }
+.nav-container .x-autocontainer-innerCt{
+    width: 640px;
+    height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+}
 // 
 .x-autocontainer-innerCt{
     vertical-align: middle;
