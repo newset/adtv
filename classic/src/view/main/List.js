@@ -4,9 +4,15 @@
 Ext.define('MobileTV.view.main.List', {
     extend: 'Ext.container.Container',
     xtype: 'mainlists',
-
     requires: [
-        'MobileTV.store.Personnel'
+        'MobileTV.store.Personnel',
+
+        'MobileTV.view.aders.List',
+        'MobileTV.view.shows.Main',
+        'MobileTV.view.devices.Main',
+        'MobileTV.view.finance.Main',
+        'MobileTV.view.data.Main',
+        'MobileTV.view.users.Users'
     ],
     controller: 'homegrid',
     title: false,

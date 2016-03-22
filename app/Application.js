@@ -7,7 +7,6 @@ Ext.define('MobileTV.Application', {
     extend: 'Ext.app.Application',
     
     name: 'MobileTV',
-
     stores: [
         // TODO: add global / shared stores here
     ],

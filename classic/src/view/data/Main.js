@@ -1,5 +1,8 @@
 Ext.define('MobileTV.view.data.Main', {
     extend: 'Ext.grid.Panel',
+    requires: [
+        'Ext.form.field.Date'
+    ],
     dockedItems: [{
         xtype: 'toolbar',
         dock: 'top',
