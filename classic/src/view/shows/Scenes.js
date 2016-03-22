@@ -5,7 +5,7 @@ Ext.define('MobileTV.view.shows.Scenes', {
         xtype: 'toolbar',
         dock: 'top',
         items: [{
-            text: '新增管理员'
+            text: '新增场景'
         }, {
         	text: '批量删除',
             xtype: 'button'

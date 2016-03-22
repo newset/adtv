@@ -5,6 +5,9 @@ Ext.define('MobileTV.view.finance.Main', {
         'MobileTV.view.finance.Order',
         'MobileTV.view.finance.Plan',
         'MobileTV.view.finance.Logs',
+
+        'Ext.form.field.Date',
+        'Ext.form.field.ComboBox'
     ],
     tabPosition: 'top',
     layout: 'auto',

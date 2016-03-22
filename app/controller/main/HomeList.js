@@ -4,14 +4,6 @@ Ext.define('MobileTV.controller.main.HomeList', {
     init: function() {
         console.log('The panel was rendered');
     },
-    requires: [
-        'MobileTV.view.users.Users',
-        'MobileTV.view.aders.List',
-        'MobileTV.view.shows.Main',
-        'MobileTV.view.devices.Main',
-        'MobileTV.view.finance.Main',
-        'MobileTV.view.data.Main',
-    ],
     currentPanel: null,
     showPanel: function(btn) {
         var wid = 'winIdPrefix' + btn.id;
