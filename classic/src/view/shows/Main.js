@@ -6,6 +6,12 @@ Ext.define('MobileTV.view.shows.Main', {
         'MobileTV.view.shows.Shows',
         'MobileTV.view.shows.Scenes',
         'MobileTV.view.shows.Live',
+
+        'MobileTV.store.SceneCategory',
+        'MobileTV.store.ShowCategory',
+        'MobileTV.store.Scene',
+        'MobileTV.store.Live',
+        'MobileTV.store.Show'
     ],
     tabPosition: 'top',
     items: [{

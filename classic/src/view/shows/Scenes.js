@@ -1,6 +1,9 @@
 Ext.define('MobileTV.view.shows.Scenes', {
     extend: 'Ext.grid.Panel',
     xtype: 'scenes',
+    store: {
+        type: 'scene'
+    },
     dockedItems: [{
         xtype: 'toolbar',
         dock: 'top',
@@ -20,12 +23,12 @@ Ext.define('MobileTV.view.shows.Scenes', {
         }]
     }],
     columns: [
-        { xtype: 'checkcolumn', dataIndex: 'id' },
-        { text: 'ID', dataIndex: 'name' },
-        { text: '名称', dataIndex: 'username', flex: 1 },
-        { text: '作者', dataIndex: 'email' },
-        { text: '审核状态', dataIndex: 'belong' },
+        { xtype: 'checkcolumn'},
+        { text: 'ID', dataIndex: 'id' },
+        { text: '名称', dataIndex: 'title', flex: 1 },
+        { text: '作者', dataIndex: 'author' },
+        { text: '审核状态', dataIndex: 'status' },
         { text: '创建时间', dataIndex: 'created_at' },
-        { text: '操作', dataIndex: 'created_at' }
+        { text: '操作' }
     ]
 });

@@ -1,6 +1,9 @@
 Ext.define('MobileTV.view.shows.Shows', {
     extend: 'Ext.grid.Panel',
     xtype: 'showslist',
+    store: {
+        type: 'show'
+    },
     dockedItems: [{
         xtype: 'toolbar',
         dock: 'top',
@@ -20,12 +23,12 @@ Ext.define('MobileTV.view.shows.Shows', {
         }]
     }],
     columns: [
-        { xtype: 'checkcolumn', dataIndex: 'id' },
-        { text: 'ID', dataIndex: 'name' },
+        { xtype: 'checkcolumn' },
+        { text: 'ID', dataIndex: 'id' },
         { text: '广告商', dataIndex: 'ader', flex: 1 },
-        { text: '文件名', dataIndex: 'filename' },
+        { text: '文件名', dataIndex: 'filename', flex: 1 },
         { text: '大小', dataIndex: 'size' },
         { text: '上传时间', dataIndex: 'uploaded_at' },
-        { text: '操作', dataIndex: 'created_at' }
+        { text: '操作'}
     ]
 });

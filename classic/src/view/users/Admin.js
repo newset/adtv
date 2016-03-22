@@ -1,6 +1,10 @@
 Ext.define('MobileTV.view.users.Admin', {
     extend: 'Ext.grid.Panel',
     xtype: 'admin',
+    store: {
+        type: 'admin'
+    },
+    layout: 'fit',
     dockedItems: [{
         xtype: 'toolbar',
         dock: 'top',
@@ -20,10 +24,10 @@ Ext.define('MobileTV.view.users.Admin', {
         }]
     }],
     columns: [
-        { xtype: 'checkcolumn', dataIndex: 'id' },
-        { text: 'ID', dataIndex: 'name' },
+        { xtype: 'checkcolumn' },
+        { text: 'ID', dataIndex: 'id' },
         { text: '帐号', dataIndex: 'username', flex: 1 },
-        { text: '邮箱', dataIndex: 'email' },
+        { text: '邮箱', dataIndex: 'email', flex: 1 },
         { text: '所属管理员', dataIndex: 'belong' },
         { text: '创建时间', dataIndex: 'created_at' }
     ]

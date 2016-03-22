@@ -1,6 +1,9 @@
 Ext.define('MobileTV.view.shows.Category', {
     extend: 'Ext.grid.Panel',
     xtype: 'category',
+    store: {
+        type: 'showcategory'
+    },
     dockedItems: [{
         xtype: 'toolbar',
         dock: 'top',
@@ -20,10 +23,10 @@ Ext.define('MobileTV.view.shows.Category', {
         }]
     }],
     columns: [
-        { xtype: 'checkcolumn', dataIndex: 'id' },
-        { text: '名称', dataIndex: 'name' },
+        { xtype: 'checkcolumn'},
+        { text: '名称', dataIndex: 'title', flex: 1 },
         { text: '创建时间', dataIndex: 'created_at' },
-        { text: '操作', dataIndex: 'created_at' }
+        { text: '操作'}
     ]
 });
 
@@ -31,6 +34,9 @@ Ext.define('MobileTV.view.shows.SceneCategory', {
     extend: 'Ext.grid.Panel',
     xtype: 'scenecategory',
     multiSelect : true,
+    store: {
+        type: 'scenecategory'
+    },
     dockedItems: [{
         xtype: 'toolbar',
         dock: 'top',
@@ -50,9 +56,9 @@ Ext.define('MobileTV.view.shows.SceneCategory', {
         }]
     }],
     columns: [
-        { xtype: 'checkcolumn', dataIndex: 'id' },
-        { text: '名称', dataIndex: 'name' },
-        { text: '创建时间', dataIndex: 'created_at' },
-        { text: '操作', dataIndex: 'created_at' }
+        { xtype: 'checkcolumn' },
+        { text: '名称', dataIndex: 'title', flex: 1},
+        { text: '创建时间', dataIndex: 'created_at', flex: 1 },
+        { text: '操作' }
     ]
 });

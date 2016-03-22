@@ -1,6 +1,12 @@
 Ext.define('MobileTV.view.users.Role', {
     extend: 'Ext.grid.Panel',
     xtype: 'role',
+    requires: [
+        'MobileTV.store.Role'
+    ],
+    store: {
+        type: 'role'
+    },
     dockedItems: [{
         xtype: 'toolbar',
         dock: 'top',
@@ -18,10 +24,10 @@ Ext.define('MobileTV.view.users.Role', {
         }]
     }],
     columns: [
-        { xtype: 'checkcolumn', dataIndex: 'id' },
+        { xtype: 'checkcolumn' },
         { text: '名称', dataIndex: 'title', flex: 1 },
-        { text: '创建人员', dataIndex: 'created_by' },
+        { text: '创建人员', dataIndex: 'created_by', flex: 1 },
         { text: '创建时间', dataIndex: 'created_at' },
-        { text: '备注', dataIndex: 'note' }
+        { text: '备注', dataIndex: 'note', flex: 1 }
     ]
 });

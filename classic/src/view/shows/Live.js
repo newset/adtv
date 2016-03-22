@@ -1,6 +1,9 @@
 Ext.define('MobileTV.view.shows.Live', {
     extend: 'Ext.grid.Panel',
     xtype: 'scenelive',
+    store: {
+        type: 'live'
+    },
     dockedItems: [{
         xtype: 'toolbar',
         dock: 'top',
@@ -20,13 +23,13 @@ Ext.define('MobileTV.view.shows.Live', {
         }]
     }],
     columns: [
-        { xtype: 'checkcolumn', dataIndex: 'id' },
-        { text: 'ID', dataIndex: 'name' },
-        { text: '直播URL', dataIndex: 'username', flex: 1 },
-        { text: '直播终端数', dataIndex: 'email' },
-        { text: '直播时间', dataIndex: 'belong' },
-        { text: '当前状态', dataIndex: 'created_at' },
+        { xtype: 'checkcolumn'},
+        { text: 'ID', dataIndex: 'id' },
+        { text: '直播URL', dataIndex: 'url', flex: 1 },
+        { text: '直播终端数', dataIndex: 'deviceCount' },
+        { text: '直播时间', dataIndex: 'time' },
+        { text: '当前状态', dataIndex: 'status' },
         { text: '创建时间', dataIndex: 'created_at' },
-        { text: '操作', dataIndex: 'created_at' }
+        { text: '操作'}
     ]
 });

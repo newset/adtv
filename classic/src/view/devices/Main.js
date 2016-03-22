@@ -4,6 +4,8 @@ Ext.define('MobileTV.view.devices.Main', {
     requires: [
         'MobileTV.view.devices.List',
         'MobileTV.view.devices.Plan',
+
+        'MobileTV.store.Device'
     ],
     tabPosition: 'top',
     items: [{
