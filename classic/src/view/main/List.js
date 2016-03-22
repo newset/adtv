@@ -23,7 +23,8 @@ Ext.define('MobileTV.view.main.List', {
             text: '用户管理',
             data: {
                 url: '/users',
-                icon: 'fa fa-user'
+                icon: 'fa fa-user',
+                target: 'users'
             }
         },
         {
@@ -33,7 +34,8 @@ Ext.define('MobileTV.view.main.List', {
             text: '广告主管理',
             data: {
                 url: '/aders',
-                icon: 'fa fa-users'
+                icon: 'fa fa-users',
+                target: 'aders'
             }
         },
         {
@@ -43,7 +45,8 @@ Ext.define('MobileTV.view.main.List', {
             text: '节目管理',
             data: {
                 url: '/shows',
-                icon: 'fa fa-film'
+                icon: 'fa fa-film',
+                target: 'shows'
             }
         },
         {
@@ -53,7 +56,8 @@ Ext.define('MobileTV.view.main.List', {
             text: '设备管理',
             data: {
                 url: '/devices',
-                icon: 'fa fa-tablet'
+                icon: 'fa fa-tablet',
+                target: 'devices'
             }
         },
         {
@@ -63,7 +67,8 @@ Ext.define('MobileTV.view.main.List', {
             text: '财务管理',
             data: {
                 url: '/finance',
-                icon: 'fa fa-dollar'
+                icon: 'fa fa-dollar',
+                target: 'finance'
             }
         },
         {
@@ -73,7 +78,8 @@ Ext.define('MobileTV.view.main.List', {
             text: '数据统计',
             data: {
                 url: '/data',
-                icon: 'fa-database fa'
+                icon: 'fa-database fa',
+                target: 'data'
             }
         }
     ],

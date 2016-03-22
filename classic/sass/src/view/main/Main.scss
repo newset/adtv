@@ -83,7 +83,7 @@
 }
 
 @font-face {
-  font-family: 'iconfont';
+  font-family: 'ext-watermark';
   src: url('//at.alicdn.com/t/font_1458445629_6416082.eot'); /* IE9*/
   src: url('//at.alicdn.com/t/font_1458445629_6416082.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
   url('//at.alicdn.com/t/font_1458445629_6416082.woff') format('woff'), /* chrome、firefox */
@@ -92,7 +92,7 @@
 }
 
 .ali-font{
-    font: 'iconfont';
+    font: 'ext-watermark';
 }
 
 .af.af-user:after{
@@ -107,13 +107,14 @@
 }
 
 .nav-container .x-autocontainer-innerCt{
-    width: 640px;
+    width: 660px;
     height: 210px;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 20px;
 }
 // 
-.x-autocontainer-innerCt{
+.app-main > .x-autocontainer-outerCt > .x-autocontainer-innerCt{
     vertical-align: middle;
 }
 
@@ -121,8 +122,11 @@
     width: 200px;
     height: 100px;
     float: left;
+    border-radius: 1px;
     margin: 0px 0px 10px 10px;
     background-image: none;
+    background-color: #617E9E;
+    border-color: #617E9E;
     transition: all .3s ease-out;
 }
 
@@ -142,3 +146,17 @@
     font-weight: bold;
 }
 
+.app-main{
+    background: url('../../resources/img/bg-repeat.jpg') 0px 100% repeat-x;
+    background-color: #aed2fa;
+}
+
+.logo-text{
+    color: #fff;
+    font-size: 18px;
+}
+
+.signout {
+    right: 0px!important;
+    left: 90%!important;
+}

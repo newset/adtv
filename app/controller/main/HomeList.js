@@ -4,6 +4,14 @@ Ext.define('MobileTV.controller.main.HomeList', {
     init: function() {
         console.log('The panel was rendered');
     },
+    requires: [
+        'MobileTV.view.users.Users',
+        'MobileTV.view.aders.List',
+        'MobileTV.view.shows.Main',
+        'MobileTV.view.devices.Main',
+        'MobileTV.view.finance.Main',
+        'MobileTV.view.data.Main',
+    ],
     currentPanel: null,
     showPanel: function(btn) {
         var wid = 'winIdPrefix' + btn.id;
@@ -15,11 +23,9 @@ Ext.define('MobileTV.controller.main.HomeList', {
         // 创建 panel
         // this.currentPanel;
         win = Ext.create('widget.window', {
-        	id: wid,
-            width: 800,
-            height: 600,
-            top: 100,
-            left: 100,
+            id: wid,
+            width: 1200,
+            height: 700,
             animateTarget: btn.id,
             draggable: true,
             resizable: true,
@@ -27,7 +33,9 @@ Ext.define('MobileTV.controller.main.HomeList', {
             minimizable: true,
             closable: true,
             title: btn.config.text,
-            constrain: true,
+            items: [{
+                xtype: btn.config.data.target
+            }],
             iconCls: btn.config.data.icon,
             renderTo: document.body,
             tools: [{
