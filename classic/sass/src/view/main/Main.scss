@@ -1,0 +1,162 @@
+/**
+ * Generates a set of style rules for the "navigation" tab UI.
+ */
+@include extjs-tab-panel-ui(
+    $ui: 'navigation',
+    $ui-tab-background-color: transparent,
+    $ui-tab-background-color-over: #505050,
+    $ui-tab-background-color-active: #303030,
+    $ui-tab-background-gradient: 'none',
+    $ui-tab-background-gradient-over: 'none',
+    $ui-tab-background-gradient-active: 'none',
+    $ui-tab-color: #acacac,
+    $ui-tab-color-over: #c4c4c4,
+    $ui-tab-color-active: #fff,
+    $ui-tab-glyph-color: #acacac,
+    $ui-tab-glyph-color-over: #c4c4c4,
+    $ui-tab-glyph-color-active: #fff,
+    $ui-tab-glyph-opacity: 1,
+    $ui-tab-border-radius: 0,
+    $ui-tab-border-width: 0,
+    $ui-tab-inner-border-width: 0,
+    $ui-tab-padding: 24px,
+    $ui-tab-margin: 0,
+    $ui-tab-font-size: 15px,
+    $ui-tab-font-size-over: 15px,
+    $ui-tab-font-size-active: 15px,
+    $ui-tab-line-height: 19px,
+    $ui-tab-font-weight: bold,
+    $ui-tab-font-weight-over: bold,
+    $ui-tab-font-weight-active: bold,
+    $ui-tab-icon-width: 24px,
+    $ui-tab-icon-height: 24px,
+    $ui-tab-icon-spacing: 5px,
+    $ui-bar-background-color: #404040,
+    $ui-bar-background-gradient: 'none',
+    $ui-bar-padding: 0,
+    $ui-strip-height: 0
+);
+
+/**
+ * Generates a set of style rules for the "navigation" panel UI.
+ */
+@include extjs-panel-ui(
+    $ui: 'navigation',
+    $ui-header-color: #fff,
+    $ui-header-glyph-color: #fff,
+    $ui-header-glyph-opacity: 1,
+    $ui-header-font-size: 20px,
+    $ui-header-line-height: 24px,
+    $ui-header-font-weight: bold,
+    $ui-header-icon-height: 24px,
+    $ui-header-icon-width: 24px,
+    $ui-header-icon-spacing: 15px,
+    $ui-header-background-color: $base-color,
+    $ui-header-padding: 0,
+    $ui-header-text-margin: 36px,
+    $ui-header-noborder-adjust: false
+);
+
+.x-title-icon-navigation {
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.x-tab-icon-el-navigation {
+    font-family: FontAwesome;
+    color: #acacac;
+
+    .x-tab-over & {
+        color: #c4c4c4;
+    }
+
+    .x-tab-active & {
+        color: #fff;
+    }
+}
+
+.x-panel-header-title-navigation > .x-title-text-navigation:after {
+    top: 30px;
+    right: -24px;
+}
+
+@font-face {
+  font-family: 'ext-watermark';
+  src: url('//at.alicdn.com/t/font_1458445629_6416082.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1458445629_6416082.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1458445629_6416082.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1458445629_6416082.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1458445629_6416082.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.ali-font{
+    font: 'ext-watermark';
+}
+
+.af.af-user:after{
+    content: 'e605';
+}
+
+/** 
+ * button
+ */
+.x-btn{
+    border-radius: 0px;
+}
+
+.nav-container .x-autocontainer-innerCt{
+    width: 660px;
+    height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+// 
+.app-main > .x-autocontainer-outerCt > .x-autocontainer-innerCt{
+    vertical-align: middle;
+}
+
+.nav-container .x-autocontainer-innerCt .image-btn{
+    width: 200px;
+    height: 100px;
+    float: left;
+    border-radius: 1px;
+    margin: 0px 0px 10px 10px;
+    background-image: none;
+    background-color: #617E9E;
+    border-color: #617E9E;
+    transition: all .3s ease-out;
+}
+
+.nav-container .x-autocontainer-innerCt .image-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 4px;
+}
+
+.nav-container .x-autocontainer-innerCt .image-btn .x-btn-icon-el{
+    height: 60px;
+    width: 100px;
+    background-size: contain;
+}
+
+.nav-container .x-autocontainer-innerCt .image-btn .x-btn-inner{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.app-main{
+    background: url('../../resources/img/bg-repeat.jpg') 0px 100% repeat-x;
+    background-color: #aed2fa;
+}
+
+.logo-text{
+    color: #fff;
+    font-size: 18px;
+}
+
+.signout {
+    right: 0px!important;
+    left: 90%!important;
+}

@@ -1,35 +1,22 @@
 {
   "name": "adtv",
-  "description": "",
-  "main": "index.js",
+  "homepage": "https://github.com/newset/adtv",
   "authors": [
     "Insane <luojieyy@gmail.com>"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/newset/adtv",
+  "description": "",
+  "main": "",
   "moduleType": [],
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
+    "vendor",
     "test",
-    "tests",
-    "vendor"
+    "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.6",
-    "angular": "^1.5.0",
-    "blockUI": "blockui#*",
-    "PACE": "pace#^1.0.2",
-    "angular-ui-router": "^0.2.18",
-    "oclazyload": "^1.0.9",
-    "angular-route": "^1.5.0",
-    "bootbox.js": "bootbox#^4.4.0",
-    "jquery.fancytree": "fancytree#^2.15.0",
-    "bootstrap-treeview": "^1.2.0",
-    "bootstrap-datepicker": "eternicode/bootstrap-datepicker#^1.6.0",
-    "sweetalert": "^1.1.3",
-    "ngModal": "^1.2.2",
-    "ng-dialog": "ngDialog#^0.5.8"
+    "font-awesome": "fontawesome#^4.5.0"
   }
 }

@@ -1,173 +1,54 @@
-<!DOCTYPE html>
-<html ng-app="adtv">
+<!DOCTYPE HTML>
+<html manifest="">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>广告机后台</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<!-- global stylesheets -->
-	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
-	<!-- /global stylesheets -->
+    <title>MobileTV</title>
+
+    
+    <script type="text/javascript">
+        var Ext = Ext || {}; // Ext namespace won't be defined yet...
+
+        // This function is called by the Microloader after it has performed basic
+        // device detection. The results are provided in the "tags" object. You can
+        // use these tags here or even add custom tags. These can be used by platform
+        // filters in your manifest or by platformConfig expressions in your app.
+        //
+        Ext.beforeLoad = function (tags) {
+            var s = location.search,  // the query string (ex "?foo=1&bar")
+                profile;
+
+            // For testing look for "?classic" or "?modern" in the URL to override
+            // device detection default.
+            //
+            if (s.match(/\bclassic\b/)) {
+                profile = 'classic';
+            }
+            else if (s.match(/\bmodern\b/)) {
+                profile = 'modern';
+            }
+            else {
+                profile = tags.desktop ? 'classic' : 'modern';
+                //profile = tags.phone ? 'modern' : 'classic';
+            }
+
+            Ext.manifest = profile; // this name must match a build profile name
+
+            // This function is called once the manifest is available but before
+            // any data is pulled from it.
+            //
+            //return function (manifest) {
+                // peek at / modify the manifest object
+            //};
+        };
+    </script>
+    
+    
+    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script id="microloader" data-app="3475b251-7444-4cab-84da-206e0a5a5e4a" type="text/javascript" src="bootstrap.js"></script>
 
 </head>
-<body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_icon_light.png" alt=""></a>
-			<a class="navbar-brand" href="#">节目终端后台</a>
-		</div>
-
-		<div class="navbar-collapse collapse" id="navbar-mobile">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown language-switch">
-					<a class="dropdown-toggle" data-toggle="dropdown">
-						<img src="assets/images/flags/cn.png" class="position-left" alt="">
-						 中文
-						<span class="caret"></span>
-					</a>
-
-					<ul class="dropdown-menu">
-						<li><a class="deutsch"><img src="assets/images/flags/cn.png" alt=""> 中文简体</a></li>
-						<li><a class="deutsch"><img src="assets/images/flags/tw.png" alt=""> 中文繁体</a></li>
-						<li><a class="ukrainian"><img src="assets/images/flags/gb.png" alt="">English</a></li>
-					</ul>
-				</li>
-				<li class="dropdown dropdown-user">
-					<a class="dropdown-toggle" data-toggle="dropdown">
-						<img src="assets/images/placeholder.jpg" alt="">
-						<span>管理员</span>
-						<i class="caret"></i>
-					</a>
-
-					<ul class="dropdown-menu dropdown-menu-right">
-						<li><a href="#"><i class="icon-user-plus"></i>个人中心</a></li>
-						<li><a href="#"><span class="badge bg-teal-400 pull-right">58</span> <i class="icon-comment-discussion"></i>消息</a></li>
-						<li class="divider"></li>
-						<li><a href="#"><i class="icon-cog5"></i>设置</a></li>
-						<li><a href="#"><i class="icon-switch2"></i>注销</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- /main navbar -->
-
-
-	<!-- Page header -->
-	<div class="page-header">
-		<div class="breadcrumb-line breadcrumb-line-wide hidden-xs">
-			<ul class="breadcrumb">
-				<li><a href="index.html"><i class="icon-home2 position-left"></i>首页</a></li>
-				<li class="active">全部</li>
-			</ul>
-			<ul class="breadcrumb-elements">
-				<li><a href="#"><i class="icon-comment-discussion position-left"></i>支持</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- /Page header -->
-
-	<!-- Page container -->
-	<div class="page-container pt-20">
-
-		<!-- Page content -->
-		<div class="page-content">
-
-			<!-- Main sidebar -->
-			<div class="sidebar sidebar-main sidebar-fixed">
-				<div class="sidebar-content">
-
-					<!-- Main navigation -->
-					<div class="sidebar-category sidebar-category-visible">
-						<div class="category-content no-padding">
-							<ul class="navigation navigation-main navigation-accordion">
-
-								<!-- Main -->
-								<li class="navigation-header"><span>导航</span> <i class="icon-menu" title="Main pages"></i></li>
-								<li ui-sref-active="active">
-									<a ui-sref="app.users"><i class="icon-home4"></i> 
-										<span>用户管理</span>
-									</a>
-								</li>
-								<li ui-sref-active="active">
-									<a ui-sref="app.admin"><i class="icon-list-unordered"></i> 
-									<span>管理员管理</span></a>
-								</li>
-								<!-- <li ui-sref-active="active">
-									<a ui-sref="app.superadmin"><i class="icon-width"></i> <span>超级管理员</span></a>
-								</li> -->
-								<li ui-sref-active="active">
-									<a ui-sref="app.customer"><i class="icon-table2"></i> <span>广告商管理</span></a>
-								</li>
-								<li ui-sref-active="active">
-									<a ui-sref="app.shows"><i class="icon-sphere"></i> <span>节目管理</span></a>
-								</li>
-								<li><a ui-sref="app.scenes"><i class="icon-popout"></i> <span>场景管理</span></a></li>
-								<li class="has-sub" ui-sub-nav="app.devices">
-									<a href=""><i class="icon-tv"></i> <span>终端管理</span></a>
-									<ul>
-										<li ui-sref-active="active"><a ui-sref="app.devices.index">终端信息管理</a></li>
-										<li ui-sref-active="active"><a ui-sref="app.devices.playlist">终端播放计划</a></li>
-									</ul>
-								</li>
-								<li ui-sref-active="active">
-									<a ui-sref="app.plan"><i class="icon-puzzle4"></i> <span>套餐管理</span></a>
-								</li>
-								<li ui-sref-active="active">
-									<a ui-sref="app.order">
-									<i class="icon-stats-bars"></i> <span>订单管理</span></a>
-								</li>
-								<li ui-sref-active="active">
-									<a ui-sref="app.finance"><i class="icon-stats-dots"></i> <span>财务记录</span></a>
-								</li>
-								<li ui-sref-active="active">
-									<a ui-sref="app.logs"><i class="icon-statistics"></i> <span>日志记录</span></a>
-								</li>
-								<li ui-sref-active="active">
-									<a ui-sref="app.live"><i class="icon-tv"></i> <span>直播节目</span></a>
-								</li>
-								<!-- /Main -->
-							</ul>
-						</div>
-					</div>
-
-					<!-- /Main navigation -->
-				</div>
-			</div>
-			<!-- /Main sidebar -->
-
-			<div class="content-wrapper" ui-view>
-
-			</div>
-		</div>
-		<!-- /Page content -->
-
-	</div>
-	<!-- /Page container -->
-
-	<!-- Core JS files -->
-	<script type="text/javascript" src="vendor/PACE/pace.min.js"></script>
-	<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="vendor/blockUI/jquery.blockUI.js"></script>
-	<script type="text/javascript" src="vendor/angular/angular.js"></script>
-	<script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
-	<script type="text/javascript" src="vendor/oclazyload/dist/ocLazyLoad.min.js"></script>
-	<!-- /core JS files -->
-
-	<!-- app js -->
-	<script type="text/javascript" src="app/app.js"></script>
-	<script type="text/javascript" src="app/controllers.js"></script>
-	<script type="text/javascript" src="app/directives.js"></script>
-
-	<!-- /app js -->
-</body>
+<body></body>
 </html>
